@@ -26,6 +26,14 @@
         <ID>data</ID>
         <Default>"{'name' : 'value' }"</Default>
       </Literal>
+      <Literal>
+        <ID>dataType</ID>
+        <Default>json</Default>
+      </Literal>
+      <Literal>
+        <ID>contentType</ID>
+        <Default>application/json</Default>
+      </Literal>
     </Declarations>
     <Code Language="JavaScript">
       <![CDATA[
@@ -33,7 +41,8 @@
         type : "$type$",
         url : "$url$",
         data : $data$,
-        
+        dataType : "$dataType$",
+        contentType : "$contentType$",
         success : function(respose){
           $selected$     
         },
