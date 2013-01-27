@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Delegate</Title>
+    <Author>Jishnu</Author>
+    <Shortcut>jqDelegate</Shortcut>
+    <Description>The delegate snippet</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>selector</ID>
+        <Default>#myDiv</Default>
+      </Literal>
+      <Literal>
+        <ID>child</ID>
+        <Default>#myInnerDiv</Default>
+      </Literal>
+      <Literal>
+        <ID>eventType</ID>
+        <Default>click</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="JavaScript">
+      <![CDATA[
+      $$("$selector$").delegate("$child$", "$eventType$", function(e){
+        $selected$ 
+      }$end$);]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
