@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Ajax</Title>
+    <Author>Jishnu</Author>
+    <Shortcut>jqAjax</Shortcut>
+    <Description>Jquery ajax function</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>type</ID>
+        <Default>POST</Default>
+        <ToolTip>The http verb use GET for idempotent requests</ToolTip>
+      </Literal>
+      <Literal>
+        <ID>url</ID>
+        <Default>Controller/Action</Default>
+        <ToolTip>The url </ToolTip>
+      </Literal>
+      <Literal>
+        <ID>data</ID>
+        <Default>"{'name' : 'value' }"</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="JavaScript">
+      <![CDATA[
+      $$.ajax({
+        type : "$type$",
+        url : "$url$",
+        data : $data$,
+        
+        success : function(respose){
+          $selected$     
+        },
+        error : function(){
+        
+        }
+      $end$});]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
